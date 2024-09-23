@@ -1,5 +1,5 @@
 export function getLocation(usrLocation) {
-  let locationUrl = `http://api.weatherapi.com/v1/current.json?key=af5bceee5bae4f218bd215116242209&q=${usrLocation}`;
+  let locationUrl = `https://api.weatherapi.com/v1/current.json?key=af5bceee5bae4f218bd215116242209&q=${usrLocation}`;
 
   $.getJSON(locationUrl, (data) => {
     console.log(data);
