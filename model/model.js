@@ -24,7 +24,7 @@ export function getLocation(usrLocation) {
 
       $("#results").html(location.name);
       $("#weatherText").html(condition.text)
-      $("#image").html(icon);
+      $("#weatherImg").html(icon);
     });
   }).fail((error) => {
     console.log("error", error.message);

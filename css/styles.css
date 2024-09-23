@@ -6,15 +6,26 @@
 
 html, body {
   height: 100%;
-  background-color: gray;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
+#mainContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/css/images/sky-background.jpg);
+}
+
 nav {
-  background-color: rgb(67, 121, 240);
+  width: 75%;
+  height: 5vh;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid 2px rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -22,7 +33,51 @@ nav {
 nav a {
   text-decoration: none;
   text-transform: uppercase;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+#app {
+  width: 75vw;
+  height: 95vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#app .searchContainer {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#app .searchContainer #inputFields {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#app .searchContainer #inputFields #usrInput {
+  height: 50px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  text-indent: 10px;
+  font-size: 18pt;
+  background-color: rgb(135, 206, 235);
+}
+#app .searchContainer #inputFields #search {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: rgb(78, 119, 255);
   color: rgb(255, 255, 255);
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
