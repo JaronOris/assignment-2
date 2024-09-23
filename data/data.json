@@ -1,0 +1,27 @@
+{
+  "Navigation": [
+    {
+      "name": "home",
+      "urlAddress": "home"
+    },
+    {
+      "name": "today",
+      "urlAddress": "today"
+    },
+    {
+      "name": "hourly",
+      "urlAddress": "hourly"
+    },
+    {
+      "name": "ten day",
+      "urlAddress": "ten-day"
+    },
+    {
+      "name": "login",
+      "urlAddress": "login"
+    }
+  ],
+  "API-Key": {
+    "key": "af5bceee5bae4f218bd215116242209"
+  }
+}
