@@ -42,13 +42,15 @@ nav a {
   height: 95vh;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
 }
 #app .searchContainer {
   width: 50%;
-  height: 50%;
+  height: 30%;
+  margin-top: -100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +80,42 @@ nav a {
   background-color: rgb(78, 119, 255);
   color: rgb(255, 255, 255);
   border: none;
+}
+#app .resultsContainer {
+  width: 60vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#app .resultsContainer .panelContainer {
+  width: 55vw;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+}
+#app .resultsContainer .panelContainer .weatherInfo {
+  width: 300px;
+  height: 200px;
+}
+#app .resultsContainer .panelContainer .weatherInfo #tempDegree {
+  width: fit-content;
+  height: fit-content;
+  font-size: 40pt;
+}
+#app .resultsContainer .panelContainer .weatherInfo #currentWeather {
+  width: fit-content;
+  height: fit-content;
+}
+#app .resultsContainer .panelContainer .weatherInfo #currentWeather #weatherName {
+  width: fit-content;
+  height: fit-content;
+  font-size: 16pt;
+}
+#app .resultsContainer .panelContainer .weatherInfo #currentWeather #weatherIcon {
+  margin-top: -20px;
+  width: fit-content;
+  height: fit-content;
 }
 
 /*# sourceMappingURL=styles.css.map */

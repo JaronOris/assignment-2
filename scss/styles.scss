@@ -41,13 +41,15 @@ nav {
   height: 95vh;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255, 50%);
 
   .searchContainer {
     width: 50%;
-    height: 50%;
+    height: 30%;
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,6 +62,7 @@ nav {
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
+
       #usrInput {
         height: 50px;
         width: 300px;
@@ -77,6 +80,49 @@ nav {
         background-color: rgb(78, 119, 255);
         color: rgb(255, 255, 255);
         border: none;
+      }
+    }
+  }
+
+  .resultsContainer {
+    width: 60vw;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .panelContainer {
+      width: 55vw;
+      height: 35vh;
+      display: flex;
+      align-items: center;
+
+      .weatherInfo {
+        width: 300px;
+        height: 200px;
+
+        #tempDegree {
+          width: fit-content;
+          height: fit-content;
+          font-size: 40pt;
+        }
+
+        #currentWeather{
+          width: fit-content;
+          height: fit-content;
+
+          #weatherName {
+            width: fit-content;
+            height: fit-content;
+            font-size: 16pt;
+          }
+
+          #weatherIcon {
+            margin-top: -20px;
+            width: fit-content;
+            height: fit-content;
+          }
+        }
       }
     }
   }

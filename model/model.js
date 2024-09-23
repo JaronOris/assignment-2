@@ -14,17 +14,18 @@ export function getLocation(usrLocation) {
     //FETCHES WEATHER IMAGE. THERE HAS TO BE A BETTER WAY TO DO THIS
     $.getJSON(locationUrl, (data) => {
       console.log(data);
-      let current = data.current;
       let location = data.location;
+      let current = data.current;
       let condition = current.condition;
       let icon = `<img 
                     src="https:${condition.icon}"
                     alt ="${condition.text}"
                     />`;
 
-      $("#results").html(location.name);
-      $("#weatherText").html(condition.text)
-      $("#weatherImg").html(icon);
+      $("#locationName").html(location.name + " " + location.region + " " + location.country);
+      $("#weatherName").html(condition.text);
+      $("#weatherIcon").html(icon);
+      $("#tempDegree").html(current.temp_f);
     });
   }).fail((error) => {
     console.log("error", error.message);
