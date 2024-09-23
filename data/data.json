@@ -1,19 +1,19 @@
 {
   "Navigation": [
     {
-      "name": "home",
+      "name": "I waited until",
       "urlAddress": "home"
     },
     {
-      "name": "today",
+      "name": "the last minute to begin",
       "urlAddress": "today"
     },
     {
-      "name": "hourly",
+      "name": "Now filled with regret",
       "urlAddress": "hourly"
     },
     {
-      "name": "ten day",
+      "name": "-A Haiku",
       "urlAddress": "ten-day"
     },
     {
